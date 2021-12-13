@@ -1,7 +1,7 @@
 var iFileName = "Magic item's [Various sources, transcribed by abbil].js";
 RequiredSheetVersion(13);
 
-SourceList[ACE] = {
+SourceList["ACE"] = {
 	name : "The Ultimate Guide to Alchemy, Crafting and Enchanting",
 	abbreviation : "ACE",
 	group : "Nord Games",
@@ -20,7 +20,7 @@ MagicItemsList["armor of instinct"] = {
   	armorOptions : {
 		regExpSearch : /^(?=.*instinct)(?=.*armor).*$/i,
 		name : "Armor of Instinct",
-		source : ["AC&E", 178],
+		source : ["ACE", 178],
 		type : "light",
 		ac : 14,
 		stealthdis : false,
