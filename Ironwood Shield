@@ -7,13 +7,13 @@
 
 /*  -INFORMATION-
 	Subject:	Magic Item
-	Effect:		This script adds a magical shield called "Nature's Ward"
+	Effect:		This script adds a magical shield called "Ironwood Shield"
 				This is a homebrew item that is not published anywhere
-	Code by:	MorePurpleMoreBetter
+	Code by:	Abbil
 	Date:		2020-02-19 (sheet v13.0.0)
 */
 
-var iFileName = "Nature's Ward (magic item) [homebrew, transcribed by MPMB].js";
+var iFileName = "Ironwood Shield (magic item) [Druids: Secrets of the Primal Circle, transcribed by Abbil].js";
 RequiredSheetVersion(13);
 
 MagicItemsList["nature's ward-hb"] = {
