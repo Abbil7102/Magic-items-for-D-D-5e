@@ -20,7 +20,7 @@ MagicItemsList["armor of instinct"] = {
   	armorOptions : {
 		regExpSearch : /^(?=.*instinct)(?=.*armor).*$/i,
 		name : "Armor of Instinct",
-		source : ["ACE", 178],
+		source : ["AC&E", 178],
 		type : "light",
 		ac : 14,
 		stealthdis : false,
