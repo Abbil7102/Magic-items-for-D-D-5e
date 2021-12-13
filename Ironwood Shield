@@ -1,18 +1,23 @@
-/*	-WHAT IS THIS?-
-	This file adds optional material to "MPMB's Character Record Sheet" found at https://flapkan.com/mpmb/charsheets
-	Import this file using the "Add Extra Materials" bookmark.
-	-KEEP IN MIND-
-	It is recommended to enter the code in a fresh sheet before adding any other information (i.e. before making your character with it).
-*/
+var iFileName = "Magic item's [Various sources, transcribed by abbil].js";
+RequiredSheetVersion(13);
 
-SourceList[Dru] = {
+SourceList[Druids] = {
 	name : "Druids: Secrets of the Primal Circle PDF",
-	abbreviation : "Dru",
+	abbreviation : "Druids",
 	group : "Homebrew Games",
 };
 
-var iFileName = "Ironwood Shield (magic item) [Druids: Secrets of the Primal Circle, transcribed by Abbil].js";
-RequiredSheetVersion(13);
+MagicItemsList["ironwood shield"] = {
+	name : "Ironwood Shield",
+	source : [["Druids", 24]],
+	type : "shield",
+	rarity : "uncommon",
+	description : "This shield can be used as a spellcasting focus and requires a Bonus action instead of an Action to Don or Doff it.",
+	descriptionFull : "Ironwood shields are crafted from elderwood, and then reinforced with a permanent ironwood spell. The result is a magical shield stronger then steel and far lighter then its thickness would indicate. They are prefered by adventurers everywhere Due to their light weight and ease of use.\n An Ironwood shield weighhs only 3 pounds and is particularly easy to maneuver. You can choose to use a bonus action instead of an action to don or doff the shield",
+	action : ["bonus action", " (don/doff)"],
+	weight : 3,
+	shieldAdd : "Ironwood Shield"
+};
 
 MagicItemsList["ironwood shield"] = {
 	name : "Ironwood Shield",
