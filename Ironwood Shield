@@ -19,7 +19,7 @@ var iFileName = "Magic Item - Ironwood Shield.js";
 RequiredSheetVersion(12.999);
 
 SourceList[DRU] = {
-	name : "Druidse,
+	name : "Druids: Secrets of the Primal Circle",
 	abbreviation : "DRU",
 	group : "Homebrew Games",
 };
