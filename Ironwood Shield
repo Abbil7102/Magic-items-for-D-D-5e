@@ -15,7 +15,7 @@
 	Please support the creator of this content Homebrew Games.
 */
 
-var iFileName = "Magic Item - Ironwood Shield.js";
+var iFileName = "Magic item's [Various sources, transcribed by abbil].js";
 RequiredSheetVersion(13);
 
 SourceList[DRU] = {
