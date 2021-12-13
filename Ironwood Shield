@@ -5,9 +5,9 @@
 	It is recommended to enter the code in a fresh sheet before adding any other information (i.e. before making your character with it).
 */
 
-SourceList[Druids] = {
+SourceList[Dru] = {
 	name : "Druids: Secrets of the Primal Circle PDF",
-	abbreviation : "Druids",
+	abbreviation : "Dru",
 	group : "Homebrew Games",
 };
 
@@ -16,7 +16,7 @@ RequiredSheetVersion(13);
 
 MagicItemsList["ironwood shield"] = {
 	name : "Ironwood Shield",
-	source : [["Druids", 24]],
+	source : [["Dru", 24]],
 	type : "shield",
 	rarity : "uncommon",
 	description : "This shield can be used as a spellcasting focus and requires a Bonus action instead of an Action to Don or Doff it.",
