@@ -26,7 +26,7 @@ SourceList[DRU] = {
 
 MagicItemsList["ironwood shield"] = {
 	name : "Ironwood Shield",
-	source : [["Dru", 24]],
+	source : ["Dru", 24],
 	type : "shield",
 	rarity : "uncommon",
 	description : "This shield can be used as a spellcasting focus and requires a Bonus action instead of an Action to Don or Doff it.",
