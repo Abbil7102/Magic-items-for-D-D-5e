@@ -16,7 +16,7 @@
 */
 
 var iFileName = "Magic Item - Ironwood Shield.js";
-RequiredSheetVersion(12.999);
+RequiredSheetVersion(13);
 
 SourceList[DRU] = {
 	name : "Druids Secrets of the Primal Circle",
