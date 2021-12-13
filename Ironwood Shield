@@ -6,7 +6,7 @@
 */
 
 /*	-INFORMATION-
-	Subject:	Subclass
+	Subject:	Magic Item
 	Effect:		This script adds a magic item, called "Ironwood Shield"
 				This is taken from Druids: Secrets of the Primal Circle PDF
 				This subclass is made by Homebrew Games
@@ -19,7 +19,7 @@ var iFileName = "Ironwood Shield.js";
 RequiredSheetVersion(12.999);
 
 SourceList[DRU] = {
-	name : "Druids: Secrets of the Primal Circle",
+	name : "Druidse,
 	abbreviation : "DRU",
 	group : "Homebrew Games",
 };
