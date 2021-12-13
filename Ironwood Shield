@@ -7,7 +7,6 @@ SourceList[DRU] = {
 	group : "Homebrew Games",
 };
 
-
 MagicItemsList["ironwood shield"] = {
 	name : "Ironwood Shield",
 	source : [["Dru", 24]],
