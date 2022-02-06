@@ -1,1 +1,31 @@
+/*	-WHAT IS THIS?-
+	This file adds optional material to "MPMB's Character Record Sheet" found at https://flapkan.com/mpmb/charsheets
+	Import this file using the "Add Extra Materials" bookmark.
+	-KEEP IN MIND-
+	It is recommended to enter the code in a fresh sheet before adding any other information (i.e. before making your character with it).
+*/
+
+/*  -INFORMATION-
+	Subject:	Weapons and Equipment Packs
+	Effect:		This script adds a number of weapons and equipment packs
+				This is taken from Dungeon Masters Guild (https://www.dmsguild.com/product/174973) and is the version from 2nd of August 2017
+				This content is made by Jason Mendell
+	Code by:	MorePurpleMoreBetter
+	Date:		2018-04-11 (sheet v13.00.00)
+				The code will work in v12.999 but will require closing and opening the sheet before the packs are available
+	Please support the creator of this content (Jason Mendell) and download his material from DM Guild: https://www.dmsguild.com/browse.php?author=Jason%20Mendell
+	IMPORTANT: adding this script will remove a couple of alternative names for weapons (e.g. longsword will no longer trigger for anything other than just 'longsword')
+	Note that this content is not balanced well for all weapons and the official D&D 5e rules state that you are better off using the weapon stats from the PHB and switching out their names for something else (e.g. the sickle stats fit a kama)
+*/
+
+var iFileName = "Abbil's Magic Items [Abbil's work, transcribed by Abbil].js";
+RequiredSheetVersion(12.999);
+
+SourceList["AMI"] = {
+	name : "AMI",
+	abbreviation : "AMI",
+	group : "Dungeon Masters Guild",
+	url : "https://www.dmsguild.com/product/174973",
+	date : "2017/08/02"
+};
 
