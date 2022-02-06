@@ -18,12 +18,12 @@
 	Note that this content is not balanced well for all weapons and the official D&D 5e rules state that you are better off using the weapon stats from the PHB and switching out their names for something else (e.g. the sickle stats fit a kama)
 */
 
-var iFileName = "Items [Abbil's work, transcribed by Abbil].js";
+var iFileName = "Abbil's Magic Items [Abbil's work, transcribed by Abbil].js";
 RequiredSheetVersion(12.999);
 
-SourceList["Items"] = {
-	name : "Items",
-	abbreviation : "Items",
+SourceList["AMI"] = {
+	name : "AMI",
+	abbreviation : "AMI",
 	group : "Dungeon Masters Guild",
 	url : "https://www.dmsguild.com/product/174973",
 	date : "2017/08/02"
@@ -31,7 +31,7 @@ SourceList["Items"] = {
 
 MagicItemsList["ironwood shield"] = {
 	name : "Ironwood Shield",
-	source : ["Items", 1],
+	source : ["AMI", 1],
 	type : "shield",
 	rarity : "uncommon",
 	description : "Ironwood shields are crafted from elderwood, and then reinforced with a permanent ironwood spell.  An Ironwood shield weighs only 3 pounds and is particularly easy to maneuver. You can choose to use a bonus action instead of an action to don or doff the shield",
