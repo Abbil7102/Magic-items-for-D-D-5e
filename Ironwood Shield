@@ -34,8 +34,8 @@ MagicItemsList["ironwood shield"] = {
 	source : ["Items", 1],
 	type : "shield",
 	rarity : "uncommon",
-	description : "Ironwood shields are crafted from elderwood, and then reinforced with a permanent ironwood spell.\n  An Ironwood shield weighs only 3 pounds and is particularly easy to maneuver. You can choose to use a bonus action instead of an action to don or doff the shield",
-	descriptionfull : "Ironwood shields are crafted from elderwood, and then reinforced with a permanent ironwood spell. The result is a magical shield stronger then steel and far lighter then its thickness would indicate. They are prefered by adventurers everywhere Due to their light weight and ease of use.\n An Ironwood shield weighhs only 3 pounds and is particularly easy to maneuver. You can choose to use a bonus action instead of an action to don or doff the shield",
+	description : "Ironwood shields are crafted from elderwood, and then reinforced with a permanent ironwood spell.  An Ironwood shield weighs only 3 pounds and is particularly easy to maneuver. You can choose to use a bonus action instead of an action to don or doff the shield",
+	descriptionfull : "Ironwood shields are crafted from elderwood, and then reinforced with a permanent ironwood spell. The result is a magical shield stronger then steel and far lighter then its thickness would indicate. They are preferred by adventurers everywhere Due to their light weight and ease of use.\n An Ironwood shield weighs only 3 pounds and is particularly easy to maneuver. You can choose to use a bonus action instead of an action to don or doff the shield",
 	action : ["bonus action", " (don/doff)"],
 	weight : 3,
 	shieldAdd : "Ironwood Shield"
