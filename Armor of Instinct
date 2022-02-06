@@ -18,7 +18,7 @@
 	Note that this content is not balanced well for all weapons and the official D&D 5e rules state that you are better off using the weapon stats from the PHB and switching out their names for something else (e.g. the sickle stats fit a kama)
 */
 
-var iFileName = "Items [Abbil's work, transcribed by Abbil].js";
+var iFileName = "ACE [The Ultimate guide to Alchemy, Crafting and Enchanting, transcribed by Abbil].js";
 RequiredSheetVersion(12.999);
 
 SourceList["ACE"] = {
