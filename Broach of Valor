@@ -28,6 +28,7 @@ SourceList["ACE"] = {
 	url : "https://www.dmsguild.com/product/174973",
 	date : "2017/08/02"
 };
+
 "broach of valor" : {
 		name : "Broach of Valor",
 		source : [["ACE", 0]],
@@ -40,5 +41,5 @@ SourceList["ACE"] = {
 		usages: 1,
 		recovery: "dawn",
 	}
-},
+};
 		
