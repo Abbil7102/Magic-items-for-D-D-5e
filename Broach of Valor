@@ -40,6 +40,5 @@ MagicItemsList["broach of valor"] = {
 		weight : 1,
 		usages: 1,
 		recovery: "dawn",
-	}
 };
 		
