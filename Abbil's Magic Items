@@ -55,7 +55,8 @@ MagicItemsList["gauntlet of tuir stonebeard"] = {
 			atkAdd : [
 				function (fields, v) {
 					if (!v.isMeleeWeapon) {
-					fields.Description += '; +D4 Dmg. Vs Orcs and Goblins';
+					v.theWea.isMeleeWeapon = true;
+					fields.Description += (fields.Description ? '; ' : '') + +D4 Dmg. Vs Orcs and Goblins';
 }}]}};
 						
 
