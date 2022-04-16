@@ -21,15 +21,15 @@
 var iFileName = "Abbil's Magic Items [Abbil's work, transcribed by Abbil].js";
 RequiredSheetVersion(12.999);
 
-SourceList["AMI"] = {
+SourceList["AMI"] : {
 	name : "AMI",
 	abbreviation : "AMI",
 	group : "Dungeon Masters Guild",
 	url : "https://www.dmsguild.com/product/174973",
 	date : "2017/08/02"
 };
-
-MagicItemsList["brooch of valor"] = {
+var Base_MagicItemsList = {
+	"brooch of valor" : {
 		name : "Brooch of Valor",
 		source : ["AMI",0],
 		type : "wondrous item",
@@ -40,8 +40,8 @@ MagicItemsList["brooch of valor"] = {
 		weight : 1,
 		usages: 1,
 		recovery: "dawn",
-};
-"gauntlet of tuir stonebeard" = {
+}};
+	"gauntlet of tuir stonebeard" : {
 		name : "Gauntlet of Tuir Stonebeard",
 		source : ["AMI",0],
 		type : "wondrous item",
