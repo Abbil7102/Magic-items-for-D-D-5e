@@ -40,7 +40,7 @@ var Base_MagicItemsList = {
 		weight : 1,
 		usages: 1,
 		recovery: "dawn",
-}};
+	},
 	"gauntlet of tuir stonebeard" : {
 		name : "Gauntlet of Tuir Stonebeard",
 		source : ["AMI",0],
@@ -60,5 +60,5 @@ var Base_MagicItemsList = {
 						fields.Description += (fields.Description ? '; ' : '') + '+D4 "Melee" Dmg. Vs Orcs and Goblins';
 						}},
 				'When wearing the gauntlet of Tuir Stonebeard, your melee attacks against orc and goblin enemies cause an extra d4 points of damage when they hit.'
-]}};
+]}}};
 
