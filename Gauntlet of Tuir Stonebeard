@@ -40,7 +40,7 @@ MagicItemsList["gauntlet of tuir stonebeard"] = {
 		weight : 2,
 		attunement : false,
 		weaponOptions : {
-			description : "Finesse, light; Extra attack as bonus action",
+			description : "+D4 Dmg. Vs Orcs and Goblins.",
 			}
 };
 
