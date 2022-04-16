@@ -1,4 +1,4 @@
-/*	-WHAT IS THIS?-
+ /*	-WHAT IS THIS?-
 	This file adds optional material to "MPMB's Character Record Sheet" found at https://flapkan.com/mpmb/charsheets
 	Import this file using the "Add Extra Materials" bookmark.
 	-KEEP IN MIND-
@@ -54,11 +54,8 @@ MagicItemsList["gauntlet of tuir stonebeard"] = {
 		calcChanges : {
 			atkAdd : [
 				function (fields, v) {
-					if (!v.theWea.isMagicWeapon && v.isMeleeWeapon) {
-						v.theWea.isMagicWeapon = true;
-						fields.Description = fields.Description.replace(/(, |; )?Counts as magical/i, '');
-						fields.Description += (fields.Description ? '; ' : '') + '+D4 "Melee" Dmg. Vs Orcs and Goblins';
-						}},
-				'When wearing the gauntlet of Tuir Stonebeard, your melee attacks against orc and goblin enemies cause an extra d4 points of damage when they hit.'
-]}};
+					if (!v.isMeleeWeapon) fields.Description += '; +D4 Dmg. Vs Orcs and Goblins';
+}]}};
+						
+
 
