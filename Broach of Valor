@@ -28,3 +28,17 @@ SourceList["ACE"] = {
 	url : "https://www.dmsguild.com/product/174973",
 	date : "2017/08/02"
 };
+"broach of valor" : {
+		name : "Broach of Valor",
+		source : [["SRD", 241], ["D", 197]],
+		type : "wondrous item",
+		rarity : "very rare",
+		magicItemTable : "H",
+		description : "This broach appears as a golden shield with a heart shaped ruby in it's center.\n   Once per day, This broach will allow you to make two extra attacks with advantage within any 1 action sequence. Once it has been used, it will regain its charge at dawn the following day.",
+		descriptionFull : "This broach appears as a golden shield with a heart shaped ruby in it's center.\n   Once per day, This broach will allow you to make two extra attacks with advantage within any 1 action sequence. Once it has been used, it will regain its charge at dawn the following day.",
+		weight : 1,
+		usages: 1,
+		recovery: "dawn",
+	}
+},
+		
