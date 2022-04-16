@@ -31,7 +31,7 @@ SourceList["AMI"] = {
 
 MagicItemsList["brooch of valor"] = {
 		name : "Brooch of Valor",
-		source : [["AMI"]],
+		source : ["AMI",0],
 		type : "wondrous item",
 		rarity : "very rare",
 		magicItemTable : "H",
