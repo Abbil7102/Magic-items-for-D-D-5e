@@ -40,24 +40,22 @@ MagicItemsList["brooch of valor"] = {
 		weight : 1,
 		usages: 1,
 		recovery: "dawn",
-};
+	};
 MagicItemsList["gauntlet of tuir stonebeard"] = {
 		name : "Gauntlet of Tuir Stonebeard",
 		source : ["AMI",0],
 		type : "wondrous item",
 		rarity : "rare",
 		magicItemTable : "G",
-		description : "This gauntlet was crafted by the inventor of Orcslayer Steel, Tuir Stonebeard. When wearing this gauntlet, your melee attacks against orc and goblin enemies cause an extra d4 points of damage when they hit..",
-		descriptionFull : "This gauntlet was crafted by the inventor of Orcslayer Steel, Tuir Stonebeard. When wearing this gauntlet, your melee attacks against orc and goblin enemies cause an extra d4 points of damage when they hit..",
+		description : "This gauntlet was crafted by the inventor of Orcslayer Steel, Tuir Stonebeard. When wearing this gauntlet, your melee attacks against orc and goblin enemies cause an extra d4 points of damage when they hit.",
+		descriptionFull : "This gauntlet was crafted by the inventor of Orcslayer Steel, Tuir Stonebeard. When wearing this gauntlet, your melee attacks against orc and goblin enemies cause an extra d4 points of damage when they hit.",
 		weight : 2,
 		attunement : false,
 		calcChanges : {
 			atkAdd : [
 				function (fields, v) {
-					if (!v.isMeleeWeapon) {
-					v.theWea.isMeleeWeapon = true;
-					fields.Description += (fields.Description ? '; ' : '') + +D4 Dmg. Vs Orcs and Goblins';
-}}]}};
-						
+					if (!v.isMeleeWeapon) fields.Description += '; +D4 vs orcs & goblins';
+				}
+]}};
 
 
