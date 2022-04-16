@@ -39,8 +39,10 @@ MagicItemsList["gauntlet of tuir stonebeard"] = {
 		descriptionFull : "This gauntlet was crafted by the inventor of Orcslayer Steel, Tuir Stonebeard. When wearing this gauntlet, your melee attacks against orc and goblin enemies cause an extra d4 points of damage when they hit..",
 		weight : 2,
 		attunement : false,
-		descriptiontxt : "+D4 Dmg. Vs Orcs and Goblins.",
-
+		weaponOptions : {
+			type : "melee",
+			descriptiontxt : "+D4 Dmg. Vs Orcs and Goblins.",
+			}
 };
 
 
