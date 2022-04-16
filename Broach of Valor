@@ -30,7 +30,7 @@ SourceList["ACE"] = {
 };
 "broach of valor" : {
 		name : "Broach of Valor",
-		source : [["SRD", 241], ["D", 197]],
+		source : [["ACE", 0]],
 		type : "wondrous item",
 		rarity : "very rare",
 		magicItemTable : "H",
