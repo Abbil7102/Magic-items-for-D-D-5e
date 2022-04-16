@@ -29,4 +29,19 @@ SourceList["AMI"] = {
 	date : "2017/08/02"
 };
 
+MagicItemsList["gauntlet of tuir stonebeard"] = {
+		name : "Gauntlet of Tuir Stonebeard",
+		source : ["AMI",0],
+		type : "wondrous item",
+		rarity : "rare",
+		magicItemTable : "G",
+		description : "This gauntlet was crafted by the inventor of Orcslayer Steel, Tuir Stonebeard. When wearing this gauntlet, your melee attacks against orc and goblin enemies cause an extra d4 points of damage when they hit..",
+		descriptionFull : "This gauntlet was crafted by the inventor of Orcslayer Steel, Tuir Stonebeard. When wearing this gauntlet, your melee attacks against orc and goblin enemies cause an extra d4 points of damage when they hit..",
+		weight : 2,
+		attunement : false,
+		weaponOptions : {
+			description : "Finesse, light; Extra attack as bonus action",
+			}
+};
+
 
