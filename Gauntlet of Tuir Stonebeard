@@ -45,7 +45,7 @@ MagicItemsList["gauntlet of tuir stonebeard"] = {
 					if (!v.isMeleeWeapon) {
 						fields.Description += (fields.Description ? '; ' : '') + '+D4 Dmg. Vs Orcs and Goblins';
 						}},
-				'When wearing this gauntlet, your melee attacks against orc and goblin enemies cause an extra d4 points of damage when they hit.'
+				'When wearing the gauntlet of Tuir Stonebeard, your melee attacks against orc and goblin enemies cause an extra d4 points of damage when they hit.'
 ]}};
 
 
