@@ -21,7 +21,7 @@
 var iFileName = "Abbil's Magic Items [Abbil's work, transcribed by Abbil].js";
 RequiredSheetVersion(12.999);
 
-SourceList["AMI"] : {
+SourceList["AMI"] = {
 	name : "AMI",
 	abbreviation : "AMI",
 	group : "Dungeon Masters Guild",
