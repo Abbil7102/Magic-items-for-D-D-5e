@@ -40,7 +40,7 @@ MagicItemsList["gauntlet of tuir stonebeard"] = {
 		weight : 2,
 		attunement : false,
 		descriptiontxt : "+D4 Dmg. Vs Orcs and Goblins.",
-			}
+
 };
 
 
