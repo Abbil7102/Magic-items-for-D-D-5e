@@ -60,7 +60,7 @@ MagicItemsList["gauntlet of tuir stonebeard"] = {
 MagicItemsList["ironwood armor"] = {
 		name : "Ironwood Armor",
 		source : ["AMI",0],
-		type : "armor (medium, or heavy)",
+		type : "armor (medium, heavy)",
 		description : "I have a bonus to AC while wearing this armor. The bonus is determined by the rarity of the magic item: rare (+1), very rare (+2), or legendary (+3). Select the bonus using the little square button in this magic item line.",
 		descriptionFull : "You have a bonus to AC while wearing this armor. The bonus is determined by its rarity: rare (+1), very rare (+2), or legendary (+3).\n\nThere are several magic item tables in the Dungeon Masters Guide where this item appears on. It varies per type of armor and magic bonus, with not all types of combinations listed. See below for the table per type of armor and bonus:\n\n" + toUni("Table\tBonus\tArmor Types") +
 		"\n  G\t  +1\tChain Mail, Chain Shirt, Scale Mail" +
