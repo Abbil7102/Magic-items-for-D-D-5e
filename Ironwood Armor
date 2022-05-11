@@ -29,7 +29,6 @@ SourceList["ACE"] = {
 	date : "2017/08/02"
 };
 MagicItemsList["ironwood armor"] = {
-"armor, +1, +2, or +3" : {
 		name : "Ironwood Armor",
 		source : [["ACE", 178]],
 		type : "armor (medium, or heavy,)",
