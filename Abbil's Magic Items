@@ -73,7 +73,7 @@ MagicItemsList["ironwood armor"] = {
 		"\n  I\t  +3\tHalf Plate, Plate, Splint",
 		allowDuplicates : true,
 		chooseGear : {
-			type : "armor",
+			type : "medium, heavy",
 			prefixOrSuffix : "brackets",
 			descriptionChange : ["prefix", "ironwood armor"]
 		},
