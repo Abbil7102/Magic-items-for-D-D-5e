@@ -73,4 +73,4 @@ MagicItemsList["ironwood armor"] = {
 			description : "I have a +3 bonus to AC while wearing this armor.",
 			allowDuplicates : true
 		}
-	},
+	};
