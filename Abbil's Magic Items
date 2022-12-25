@@ -89,7 +89,7 @@ MagicItemsList["adamantium shield"] = {
 	regExpSearch : /^(?=.*shield)(?=.*adamantium).*$/i,
 	name : "Adamantium Shield",
 	source : ["AMI",0],
-	type : "improvised (shield, round)",
+	type : "weapon (shield, round)",
 	rarity : "uncommon",
 	description : "This shield is made of Adamantium and does not adhere to the laws of physics.  This metal nullifies vibrations and when held uses your reaction to turn a critical hit in to a normal damage attack.",
 	descriptionFull : "This shield is made of Adamantium and does not adhere to the laws of physics.  This metal nullifies vibrations and when held uses your reaction to turn a critical hit in to a normal damage attack.",
