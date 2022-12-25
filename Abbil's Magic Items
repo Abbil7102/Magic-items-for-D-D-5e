@@ -62,7 +62,18 @@ MagicItemsList["ironwood armor"] = {
 		source : ["AMI",0],
 		type : "armor (medium, heavy)",
 		description : "I have a bonus to AC while wearing this Non-metallic armor.",
-		descriptionFull : "You have a bonus to AC while wearing this Non-metallic armor.\n\nThere are several magic item tables in the Dungeon Masters Guide where this item appears on. It varies per type of armor and not all types are listed. See below for the table:\n\n" + toUni("Armor Type\tTable") + "\nChain Mail\t  F\nChain Shirt\t  F\nScale Mail  \t  F\nBreastplate\t  G\nSplint Armor\t  G\nHalf Plate Armor\t  H\nPlate Armor\t  H", 
+		descriptionFull : "You have a bonus to AC while wearing this Non-metallic armor.\n\nThere are several magic item tables in the Dungeon Masters Guide where this item appears on. It varies per type of armor and not all types are listed. See below for the table:\n\n" + toUni ("Table\tBonus\tArmor Types") + "\nChain Mail\t  F\nChain Shirt\t  F\nScale Mail  \t  F\nBreastplate\t  G\nSplint Armor\t  G\nHalf Plate Armor\t  H\nPlate Armor\t  H", 
+		"\n  G\t  +1\tChain Mail, Chain Shirt" +
+		"\n  G\t  +1\tScale Mail, Spiked Armor" +
+		"\n  H\t  +1\tBreastplate, Splint" +
+		"\n  H\t  +2\tChain Mail, Chain Shirt" +
+		"\n  H\t  +2\tScale Mail, Spiked Armor" +
+		"\n  I\t  +1\tHalf Plate, Plate, Scale Mail" +
+		"\n  I\t  +2\tBreastplate, Half Plate, Plate, Scale Mail" +
+		"\n  I\t  +2\tSplint" +
+		"\n  I\t  +3\tBreastplate, Chain Mail, Chain Shirt" +
+		"\n  I\t  +3\tHalf Plate, Plate" +
+		"\n  I\t  +3\tSpiked Armor, Splint",
 		allowDuplicates : true,
 		chooseGear : {
 			type : "armor",
