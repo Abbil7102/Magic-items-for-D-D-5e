@@ -75,6 +75,25 @@ MagicItemsList["ironwood armor"] = {
 			}
 		}
 	};
-		
+MagicItemsList["adamantium shield"] = {
+	regExpSearch : /^(?=.*shield)(?=.*adamantium).*$/i,
+	name : "Adamantium Shield",
+	source : ["AMI",0],
+	type : "weapon",
+	rarity : "uncommon",
+	attunement : true,
+	description : "Thrown; When held use your reaction to turn a Critical Hit into a Normal Hit",
+	tooltip : "This shield is made of Adamantium and does not adhere to the laws of physics.  This metal nullifies vibrations and when held uses your reaction to turn a critical hit in to a normal damage attack.",
+	usages : 4,
+	recovery : "long rest",
+	action : [["action", "Thwart Critical Hit"]],
+	weaponOptions : {
+		baseWeapon : "shield, round",
+		regExpSearch : /^(?=.*shield)(?=.*round).*$/i,
+		name : "Shield, Round",
+		source : ["Shld"],
+		description : "Offhand",
+		modifiers : [1, 1]
+}};		
 
 
