@@ -68,12 +68,12 @@ MagicItemsList["ironwood armor"] = {
 			type : "armor",
 			prefixOrSuffix : "brackets",
 			itemName1stPage : ["suffix", "Ironwood"],
-			descriptionChange : ["prefix", "armor"]
+			descriptionChange : ["prefix", "armor"],
 			excludeCheck : function (inObjKey, inObj) {
 				return !(/medium|heavy/i).test(inObj.type) || (/hide/i).test(inObj.name);
 			}
 		}
-	}
+	};
 		
 
 
