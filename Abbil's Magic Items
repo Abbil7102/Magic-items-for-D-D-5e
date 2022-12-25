@@ -96,6 +96,7 @@ MagicItemsList["adamantium shield"] = {
 	weight : 6,
 	usages : 4,
 	recovery : "long rest",
+	shieldAdd : ["Adamantium Shield"],
 	weaponsAdd : ["Adamantium Shield"],
 	action : [["reaction", "Thwart Critical Hit"]],
 	weaponOptions : {
