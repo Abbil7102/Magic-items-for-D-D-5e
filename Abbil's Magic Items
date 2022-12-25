@@ -90,10 +90,12 @@ MagicItemsList["adamantium shield"] = {
 	action : [["reaction", "Thwart Critical Hit"]],
 	weaponOptions : {
 		baseWeapon : "shield, round",
-		regExpSearch : /^(?=.*shield)(?=.*round).*$/i,
-		name : "Shield, Round",
-		source : ["Shld"],
-		description : "Offhand"
+		regExpSearch : /^(?=.*shield)(?=.*adamantium).*$/i,
+		name : "Adamantium Shield",
+		source : ["AMI",0],
+		range : "Melee, 20/60 ft",
+		description : "Thrown; When held use your reaction to turn a Critical Hit into a Normal Hit",
+		modifiers : [1, 1]
 }};		
 
 
