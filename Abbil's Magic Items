@@ -61,8 +61,8 @@ MagicItemsList["ironwood armor"] = {
 		name : "Ironwood Armor",
 		source : ["AMI",0],
 		type : "armor (medium, heavy)",
-		description : "I have a bonus to AC while wearing this Non-metallic armor. The bonus is determined by the rarity of the magic item: rare (+1), very rare (+2), or legendary (+3).",
-		descriptionFull : "You have a bonus to AC while wearing this Non-metallic armor. The bonus is determined by its rarity: rare (+1), very rare (+2), or legendary (+3).\n\nThere are several magic item tables in the Dungeon Masters Guide where this item appears on. It varies per type of armor and not all types are listed. See below for the table:\n\n" + toUni("Armor Type\tTable") + "\nChain Mail\t  F\nChain Shirt\t  F\nScale Mail  \t  F\nBreastplate\t  G\nSplint Armor\t  G\nHalf Plate Armor\t  H\nPlate Armor\t  H", 
+		description : "I have a bonus to AC while wearing this Non-metallic armor.",
+		descriptionFull : "You have a bonus to AC while wearing this Non-metallic armor.\n\nThere are several magic item tables in the Dungeon Masters Guide where this item appears on. It varies per type of armor and not all types are listed. See below for the table:\n\n" + toUni("Armor Type\tTable") + "\nChain Mail\t  F\nChain Shirt\t  F\nScale Mail  \t  F\nBreastplate\t  G\nSplint Armor\t  G\nHalf Plate Armor\t  H\nPlate Armor\t  H", 
 		allowDuplicates : true,
 		chooseGear : {
 			type : "armor",
