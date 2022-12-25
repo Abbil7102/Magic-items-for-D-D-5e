@@ -62,7 +62,7 @@ MagicItemsList["ironwood armor"] = {
 		source : ["AMI",0],
 		type : "armor (medium, heavy)",
 		description : "This wooden armor has been permanently enchanted to be as strong as steel by the ironwood spell.",
-		descriptionFull : "This wooden armor has been permanently enchanted to be as strong as steel by the ironwood spell. Other than the fact that the armor is wood, it has the same properties and attributes as metal armor of it's type. \n\nThere are several magic item tables in the Dungeon Masters Guide where this item appears on. It varies per type of armor and not all types are listed. See below for the table:\n\n" + toUni("Armor Type\tTable") + "\nChain Mail\t  F\nChain Shirt\t  F\nScale Mail  \t  F\nBreastplate\t  G\nSplint Armor\t  G\nHalf Plate Armor\t  H\nPlate Armor\t  H",
+		descriptionFull : "This wooden armor has been permanently enchanted to be as strong as steel by the ironwood spell. Other than the fact that the armor is wood, it has the same properties and attributes as metal armor of it's type.",
 		allowDuplicates : true,
 		chooseGear : {
 			type : "armor",
