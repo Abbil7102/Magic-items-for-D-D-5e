@@ -61,47 +61,14 @@ MagicItemsList["ironwood armor"] = {
 		name : "Ironwood Armor",
 		source : ["AMI",0],
 		type : "armor (medium, heavy)",
-		description : "I have a bonus to AC while wearing this Non-metallic armor.",
-		descriptionFull : "You have a bonus to AC while wearing this Non-metallic armor.\n\nThere are several magic item tables in the Dungeon Masters Guide where this item appears on. It varies per type of armor and not all types are listed. See below for the table:\n\n" + toUni ("Table\tBonus\tArmor Types") + "\nChain Mail\t  F\nChain Shirt\t  F\nScale Mail  \t  F\nBreastplate\t  G\nSplint Armor\t  G\nHalf Plate Armor\t  H\nPlate Armor\t  H", 
-		"\n  G\t  +1\tChain Mail, Chain Shirt" +
-		"\n  G\t  +1\tScale Mail, Spiked Armor" +
-		"\n  H\t  +1\tBreastplate, Splint" +
-		"\n  H\t  +2\tChain Mail, Chain Shirt" +
-		"\n  H\t  +2\tScale Mail, Spiked Armor" +
-		"\n  I\t  +1\tHalf Plate, Plate, Scale Mail" +
-		"\n  I\t  +2\tBreastplate, Half Plate, Plate, Scale Mail" +
-		"\n  I\t  +2\tSplint" +
-		"\n  I\t  +3\tBreastplate, Chain Mail, Chain Shirt" +
-		"\n  I\t  +3\tHalf Plate, Plate" +
-		"\n  I\t  +3\tSpiked Armor, Splint",
+		description : "This wooden armor has been permanently enchanted to be as strong as steel by the ironwood spell.",
+		descriptionFull : "This wooden armor has been permanently enchanted to be as strong as steel by the ironwood spell. Other than the fact that the armor is wood, it has the same properties and attributes as metal armor of it's type. \n\nThere are several magic item tables in the Dungeon Masters Guide where this item appears on. It varies per type of armor and not all types are listed. See below for the table:\n\n" + toUni("Armor Type\tTable") + "\nChain Mail\t  F\nChain Shirt\t  F\nScale Mail  \t  F\nBreastplate\t  G\nSplint Armor\t  G\nHalf Plate Armor\t  H\nPlate Armor\t  H",
 		allowDuplicates : true,
 		chooseGear : {
 			type : "armor",
 			prefixOrSuffix : "brackets",
 			itemName1stPage : ["suffix", "Ironwood"],
 			descriptionChange : ["prefix", "armor"],
-			choices : ["+1 AC bonus (rare)", "+2 AC bonus (very rare)", "+3 AC bonus (legendary)"],
-		"+1 ac bonus (rare)" : {
-			name : "Armor +1",
-			nameTest : "+1 Armor",
-			rarity : "rare",
-			description : "I have a +1 bonus to AC while wearing this armor.",
-			allowDuplicates : true
-		},
-		"+2 ac bonus (very rare)" : {
-			name : "Armor +2",
-			nameTest : "+2 Armor",
-			rarity : "very rare",
-			description : "I have a +2 bonus to AC while wearing this armor.",
-			allowDuplicates : true
-		},
-		"+3 ac bonus (legendary)" : {
-			name : "Armor +3",
-			nameTest : "+3 Armor",
-			rarity : "legendary",
-			description : "I have a +3 bonus to AC while wearing this armor.",
-			allowDuplicates : true
-		},
 			excludeCheck : function (inObjKey, inObj) {
 				return !(/medium|heavy/i).test(inObj.type) || (/hide/i).test(inObj.name);
 			}
