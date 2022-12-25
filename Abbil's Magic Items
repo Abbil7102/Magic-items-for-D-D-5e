@@ -91,7 +91,7 @@ MagicItemsList["adamantium shield"] = {
 	source : ["AMI",0],
 	type : "weapon (shield, round)",
 	rarity : "uncommon",
-	description : "This shield is made of Adamantium, which nullifies vibrations and when held uses your reaction to turn a critical hit in to a normal damage attack.",
+	description : "This shield is made of Adamantium and does not adhere to the laws of physics.  This metal nullifies vibrations and when held uses your reaction to turn a critical hit in to a normal damage attack.",
 	descriptionFull : "This shield is made of Adamantium and does not adhere to the laws of physics.  This metal nullifies vibrations and when held uses your reaction to turn a critical hit in to a normal damage attack.",
 	weight : 6,
 	usages : 4,
