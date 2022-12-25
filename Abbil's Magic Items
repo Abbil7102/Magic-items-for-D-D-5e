@@ -99,7 +99,7 @@ MagicItemsList["adamantium shield"] = {
 	weaponsAdd : ["Adamantium Shield"],
 	action : [["reaction", "Thwart Critical Hit"]],
 	weaponOptions : {
-		baseWeapon : "shield, round",
+		baseWeapon : "round shield",
 		regExpSearch : /^(?=.*shield)(?=.*adamantium).*$/i,
 		name : "Adamantium Shield",
 		source : ["AMI",0],
