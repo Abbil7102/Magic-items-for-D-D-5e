@@ -29,6 +29,28 @@ SourceList["AMI"] = {
 	date : "2017/08/02"
 };
 
+MagicItemsList["adamantium shield"] = {
+	regExpSearch : /^(?=.*shield)(?=.*adamantium).*$/i,
+	name : "Adamantium Shield",
+	source : ["AMI",0],
+	type : "weapon (shield, round)",
+	rarity : "uncommon",
+	description : "This shield is made of Adamantium and does not adhere to the laws of physics.  This metal nullifies vibrations and when held uses your reaction to turn a critical hit in to a normal damage attack.",
+	descriptionFull : "This shield is made of Adamantium and does not adhere to the laws of physics.  This metal nullifies vibrations and when held uses your reaction to turn a critical hit in to a normal damage attack.",
+	weight : 6,
+	usages : 4,
+	recovery : "long rest",
+	shieldAdd : ["Adamantium Shield"],
+	weaponsAdd : ["Adamantium Shield"],
+	action : [["reaction", "Thwart Critical Hit"]],
+	weaponOptions : {
+		baseWeapon : "shield, round",
+		regExpSearch : /^(?=.*shield)(?=.*adamantium).*$/i,
+		name : "Adamantium Shield",
+		source : ["AMI",0],
+		range : "Melee, 20/60 ft",
+		description : "Thrown, Offhand; When held use your reaction to turn a Critical Hit into a Normal Hit",
+}};		
 MagicItemsList["brooch of valor"] = {
 		name : "Brooch of Valor",
 		source : ["AMI",0],
@@ -85,27 +107,20 @@ MagicItemsList["ironwood shield"] = {
 	weight : 3,
 	shieldAdd : "Ironwood Shield"
 };	
-MagicItemsList["adamantium shield"] = {
-	regExpSearch : /^(?=.*shield)(?=.*adamantium).*$/i,
-	name : "Adamantium Shield",
+MagicItemsList["vitriolic web"] = {
+	regExpSearch : /^(?=.*web)(?=.*vitriolic).*$/i,
+	name : "Vitriolic Web",
 	source : ["AMI",0],
-	type : "weapon (shield, round)",
+	type : "weapon (net)",
 	rarity : "uncommon",
-	description : "This shield is made of Adamantium and does not adhere to the laws of physics.  This metal nullifies vibrations and when held uses your reaction to turn a critical hit in to a normal damage attack.",
-	descriptionFull : "This shield is made of Adamantium and does not adhere to the laws of physics.  This metal nullifies vibrations and when held uses your reaction to turn a critical hit in to a normal damage attack.",
-	weight : 6,
-	usages : 4,
-	recovery : "long rest",
-	shieldAdd : ["Adamantium Shield"],
-	weaponsAdd : ["Adamantium Shield"],
-	action : [["reaction", "Thwart Critical Hit"]],
+	description : "This net is made from the silk of an Acid Weaver Spider. A creature restrained by this magic weapon takes 2d6 acid damage at the start ofeach of it's turns. the net cannot be destroyed by dealing damage to it, and the DC to escape it using a Strength check is 13.",
+	descriptionFull : "This net is made from the silk of an Acid Weaver Spider. A creature restrained by this magic weapon takes 2d6 acid damage at the start ofeach of it's turns. the net cannot be destroyed by dealing damage to it, and the DC to escape it using a Strength check is 13.",
+	weaponsAdd : ["Vitriolic Web"],
 	weaponOptions : {
-		baseWeapon : "shield, round",
-		regExpSearch : /^(?=.*shield)(?=.*adamantium).*$/i,
-		name : "Adamantium Shield",
+		baseWeapon : "net",
+		regExpSearch : /^(?=.*web)(?=.*vitriolic).*$/i,
+		name : "Vitriolic Web",
 		source : ["AMI",0],
-		range : "Melee, 20/60 ft",
-		description : "Thrown, Offhand; When held use your reaction to turn a Critical Hit into a Normal Hit",
-}};		
-
+		description : "Thrown, only 1 atk, up to large creature hit is restrained; restrained creature takes 2d6 acid dmg",
+}};
 
