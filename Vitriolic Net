@@ -28,3 +28,19 @@ SourceList["ACE"] = {
 	url : "https://www.dmsguild.com/product/174973",
 	date : "2017/08/02"
 };
+MagicItemsList["vitriolic web"] = {
+	regExpSearch : /^(?=.*web)(?=.*vitriolic).*$/i,
+	name : "Vitriolic Web",
+	source : ["AMI",0],
+	type : "weapon (net)",
+	rarity : "uncommon",
+	description : "This net is made from the silk of an Acid Weaver Spider. A creature restrained by this magic weapon takes 2d6 acid damage at the start ofeach of it's turns. the net cannot be destroyed by dealing damage to it, and the DC to escape it using a Strength check is 13.",
+	descriptionFull : "This net is made from the silk of an Acid Weaver Spider. A creature restrained by this magic weapon takes 2d6 acid damage at the start ofeach of it's turns. the net cannot be destroyed by dealing damage to it, and the DC to escape it using a Strength check is 13.",
+	weaponsAdd : ["Vitriolic Web"],
+	weaponOptions : {
+		baseWeapon : "net",
+		regExpSearch : /^(?=.*web)(?=.*vitriolic).*$/i,
+		name : "Vitriolic Web",
+		source : ["AMI",0],
+		description : "restrained creatures take 2d6 dmg",
+}};
