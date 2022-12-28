@@ -42,5 +42,5 @@ MagicItemsList["vitriolic web"] = {
 		regExpSearch : /^(?=.*web)(?=.*vitriolic).*$/i,
 		name : "Vitriolic Web",
 		source : ["AMI",0],
-		description : "restrained creatures take 2d6 dmg",
+		description : "Thrown, only 1 attack, up to large creature hit is restrained; restrained creature takes 2d6 dmg",
 }};
