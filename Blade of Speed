@@ -1,4 +1,4 @@
-	/*	-WHAT IS THIS?-
+f	/*	-WHAT IS THIS?-
 	This file adds optional material to "MPMB's Character Record Sheet" found at https://flapkan.com/mpmb/charsheets
 	Import this file using the "Add Extra Materials" bookmark.
 	-KEEP IN MIND-
@@ -42,8 +42,8 @@ MagicItemsList["blade of speed"] = {
 		action : ["Bonus"],
 		chooseGear : {
 			type : "weapon",
-			prefixOrSuffix : "brackets",
-			descriptionChange : ["replace", "sword"],
+			prefixOrSuffix : "prefix",
+			descriptionChange : ["replace", "blade"],
 			excludeCheck : function (inObjKey, inObj) {
 				var testRegex = /sword|scimitar|rapier/i;
 				return !(testRegex).test(inObjKey) && (!inObj.baseWeapon || !(testRegex).test(inObj.baseWeapon));
