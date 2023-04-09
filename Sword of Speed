@@ -33,7 +33,7 @@ MagicItemsList["sword of speed"] = {
 		name : "Sword of Speed",
 		nameTest : "of Speed",
 		source : ["AMI"],
-		type : "weapon (any sword)",
+		type : "weapon (any slashing weapon)",
 		rarity : "legendary",
 		magicItemTable : "H",
 		description : "I gain a +2 bonus to attack and damage rolls made with this magic weapon. In addition, I can make one attack with it as a bonus action my proficiency bonus times per rest.",
