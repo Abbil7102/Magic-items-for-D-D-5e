@@ -40,7 +40,7 @@ MagicItemsList["sword of speed"] = {
 		descriptionFull : "You gain a +2 bonus to attack and damage rolls made with this magic weapon. In addition, you can make one attack with it as a bonus action your proficiency bonus times per rest.",
 		attunement : true,
 		action : [["bonus action", ""]],
-		usages : PB,
+		usages : "Proficiency bonus per",
 		recovery : "short rest",
 		chooseGear : {
 			type : "weapon",
