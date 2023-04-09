@@ -63,7 +63,7 @@ MagicItemsList["sword of speed"] = {
 		action : ["Bonus"],
 		chooseGear : {
 			type : "weapon",
-			prefixOrSuffix : "brackets",
+			prefixOrSuffix : "prefix",
 			descriptionChange : ["replace", "sword"],
 			excludeCheck : function (inObjKey, inObj) {
 				var testRegex = /sword|scimitar|rapier/i;
