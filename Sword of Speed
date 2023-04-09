@@ -61,7 +61,7 @@ MagicItemsList["sword of speed"] = {
 			}}],
 		atkCalc : [
 				function (fields, v, output) {
-					if (v.isMeleeWeapon && (/sword|katana|rapier/i).test(v.baseWeaponName) && (/^(?=.*sword)(?=.*speed).*$/i).test(v.WeaponTextName)) {
+					if (v.isMeleeWeapon && (/sword|katana|rapier/i).test(v.baseWeaponName) && (/^(?=.*sword)(?=.*katana)(?=.*speed).*$/i).test(v.WeaponTextName)) {
 						output.magic = v.thisWeapon[1] + 2;
 					}
 				}, ''
