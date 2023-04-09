@@ -40,6 +40,7 @@ MagicItemsList["blade of speed"] = {
 		descriptionFull : "You gain a +2 bonus to attack and damage rolls made with this magic weapon. In addition, you can make one attack with it as a bonus action on each of your turns.",
 		attunement : true,
 		action : ["Bonus"],
+		modifiers : [2, 2],
 		chooseGear : {
 			type : "weapon",
 			prefixOrSuffix : "brackets",
@@ -56,12 +57,4 @@ MagicItemsList["blade of speed"] = {
 						fields.Description = fields.Description.replace(/(, |; )?Counts as magical/i, '');
 						fields.Description += (fields.Description ? '; ' : '') + 'Extra attack as bonus action';
 			}}],
-		},
-		atkCalc : [
-				function (fields, v, output) {
-					if (v.isMeleeWeapon && (/sword|scimitar|rapier/i).test(v.baseWeaponName) && (/blade of speed/i).test(v.WeaponTextName)) {
-						output.magic = v.thisWeapon[1] + 2;
-					}
-				}, ''
-			]
-};
+}};
