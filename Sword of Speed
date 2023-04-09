@@ -44,7 +44,7 @@ MagicItemsList["sword of speed"] = {
 		recovery : "short rest",
 		additional : "bonus action attack",
 		chooseGear : {
-			type : "melee",
+			type : "weapon",
 			prefixOrSuffix : "prefix",
 			descriptionChange : ["replace", "sword"],
 			excludeCheck : function (inObjKey, inObj) {
@@ -62,7 +62,7 @@ MagicItemsList["sword of speed"] = {
 		atkCalc : [
 				function (fields, v, output) {
 					if (v.isMeleeWeapon && (/sword|katana|rapier/i).test(v.baseWeaponName) && (/^(?=.*sword)(?=.*katana)(?=.*speed).*$/i).test(v.WeaponTextName)) {
-						output.magic = v.thisWeapon[1] + 2;
+						output.magic = v.thisWeapon[2] + 2;
 					}
 				}, ''
 			]
