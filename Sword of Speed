@@ -44,7 +44,7 @@ MagicItemsList["sword of speed"] = {
 		recovery : "short rest",
 		additional : "bonus action attack",
 		chooseGear : {
-			type : "weapon",
+			type : "sword",
 			prefixOrSuffix : "prefix",
 			descriptionChange : ["replace", "sword"],
 			excludeCheck : function (inObjKey, inObj) {
