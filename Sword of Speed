@@ -36,8 +36,8 @@ MagicItemsList["sword of speed"] = {
 		type : "weapon (any sword)",
 		rarity : "legendary",
 		magicItemTable : "H",
-		description : "I gain a +2 bonus to attack and damage rolls made with this magic weapon. In addition, I can make one attack with it as a bonus action on each of my turns.",
-		descriptionFull : "You gain a +2 bonus to attack and damage rolls made with this magic weapon. In addition, you can make one attack with it as a bonus action on each of your turns.",
+		description : "I gain a +2 bonus to attack and damage rolls made with this magic weapon. In addition, I can make one attack with it as a bonus action my proficiency bonus times per rest.",
+		descriptionFull : "You gain a +2 bonus to attack and damage rolls made with this magic weapon. In addition, you can make one attack with it as a bonus action your proficiency bonus times per rest.",
 		attunement : true,
 		action : [["bonus action", ""]],
 		chooseGear : {
@@ -54,7 +54,7 @@ MagicItemsList["sword of speed"] = {
 					if (!v.theWea.isMagicWeapon && v.isMeleeWeapon && (/sword|rapier/i).test(v.baseWeaponName) && (/of speed/i).test(v.WeaponTextName)) {
 						v.theWea.isMagicWeapon = true;
 						fields.Description = fields.Description.replace(/(, |; )?Counts as magical/i, '');
-						fields.Description += (fields.Description ? '; ' : '') + 'Extra attack as bonus action PB per day';
+						fields.Description += (fields.Description ? '; ' : '') + 'Extra attack as bonus action PB per rest';
 			}}],
 		atkCalc : [
 				function (fields, v, output) {
