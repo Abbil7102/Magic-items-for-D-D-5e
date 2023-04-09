@@ -53,6 +53,7 @@ MagicItemsList["adamantium shield"] = {
 }};
 MagicItemsList["sword of speed"] = {
 		name : "Sword of Speed",
+		nameTest : "of Speed",
 		source : ["AMI"],
 		type : "weapon (any sword)",
 		rarity : "legendary",
