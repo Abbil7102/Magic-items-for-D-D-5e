@@ -55,7 +55,7 @@ MagicItemsList["blade of speed"] = {
 		name : "Blade of Speed",
 		source : ["AMI"],
 		type : "weapon (any sword)",
-		rarity : "very rare",
+		rarity : "legendary",
 		magicItemTable : "H",
 		description : "I gain a +2 bonus to attack and damage rolls made with this magic weapon. In addition, I can make one attack with it as a bonus action on each of my turns.",
 		descriptionFull : "You gain a +2 bonus to attack and damage rolls made with this magic weapon. In addition, you can make one attack with it as a bonus action on each of your turns.",
