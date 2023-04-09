@@ -33,32 +33,32 @@ MagicItemsList["sword of speed"] = {
 		name : "Sword of Speed",
 		nameTest : "of Speed",
 		source : ["AMI"],
-		type : "Heavy",
+		type : "weapon (any sword)",
 		rarity : "legendary",
 		magicItemTable : "H",
 		description : "I gain a +2 bonus to attack and damage rolls made with this magic weapon. In addition, I can make one attack with it as a bonus action on each of my turns.",
 		descriptionFull : "You gain a +2 bonus to attack and damage rolls made with this magic weapon. In addition, you can make one attack with it as a bonus action on each of your turns.",
 		attunement : true,
-		action : ["bonus,"],
+		action : [["bonus action", " (one attack)"]],
 		chooseGear : {
 			type : "weapon",
 			prefixOrSuffix : "prefix",
 			descriptionChange : ["replace", "sword"],
 			excludeCheck : function (inObjKey, inObj) {
-				var testRegex = /sword/i;
+				var testRegex = /sword|scimitar|rapier/i;
 				return !(testRegex).test(inObjKey) && (!inObj.baseWeapon || !(testRegex).test(inObj.baseWeapon));
 			}},
 		calcChanges : {
 			atkAdd : [
 				function (fields, v) {
-					if (!v.theWea.isMagicWeapon && v.isMeleeWeapon && (/sword/i).test(v.baseWeaponName) && (/of speed/i).test(v.WeaponTextName)) {
+					if (!v.theWea.isMagicWeapon && v.isMeleeWeapon && (/sword|scimitar|rapier/i).test(v.baseWeaponName) && (/of speed/i).test(v.WeaponTextName)) {
 						v.theWea.isMagicWeapon = true;
 						fields.Description = fields.Description.replace(/(, |; )?Counts as magical/i, '');
 						fields.Description += (fields.Description ? '; ' : '') + 'Extra attack as bonus action';
 			}}],
 		atkCalc : [
 				function (fields, v, output) {
-					if (v.isMeleeWeapon && (/sword/i).test(v.baseWeaponName) && (/^(?=.*sword)(?=.*speed).*$/i).test(v.WeaponTextName)) {
+					if (v.isMeleeWeapon && (/sword|scimitar|rapier/i).test(v.baseWeaponName) && (/^(?=.*sword)(?=.*speed).*$/i).test(v.WeaponTextName)) {
 						output.magic = v.thisWeapon[1] + 2;
 					}
 				}, ''
