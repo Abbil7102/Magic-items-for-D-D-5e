@@ -42,6 +42,7 @@ MagicItemsList["sword of speed"] = {
 		action : [["bonus action", ""]],
 		usages : "Proficiency bonus per",
 		recovery : "short rest",
+		usagescalc : "event.value = Math.max(1, What('proficiency Bonus'));",
 		chooseGear : {
 			type : "weapon",
 			prefixOrSuffix : "prefix",
