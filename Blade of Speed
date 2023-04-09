@@ -25,13 +25,13 @@ SourceList["ACE"] = {
 	name : "ACE",
 	abbreviation : "ACE",
 	group : "Dungeon Masters Guild",
-	url : "https://www.dmsguild.com/product/174973",
 	date : "2017/08/02"
 };
 
 
-MagicItemsList["blade of speed"] = {
-		name : "Blade of Speed",
+MagicItemsList["sword of speed"] = {
+		name : "Sword of Speed",
+		nameTest : "of Speed",
 		source : ["AMI"],
 		type : "weapon (any sword)",
 		rarity : "legendary",
@@ -42,8 +42,8 @@ MagicItemsList["blade of speed"] = {
 		action : ["Bonus"],
 		chooseGear : {
 			type : "weapon",
-			prefixorsuffix : "brackets",
-			descriptionChange : ["replace", "blade"],
+			prefixOrSuffix : "prefix",
+			descriptionChange : ["replace", "sword"],
 			excludeCheck : function (inObjKey, inObj) {
 				var testRegex = /sword|scimitar|rapier/i;
 				return !(testRegex).test(inObjKey) && (!inObj.baseWeapon || !(testRegex).test(inObj.baseWeapon));
@@ -51,14 +51,14 @@ MagicItemsList["blade of speed"] = {
 		calcChanges : {
 			atkAdd : [
 				function (fields, v) {
-					if (!v.theWea.isMagicWeapon && v.isMeleeWeapon && (/sword|scimitar|rapier/i).test(v.baseWeaponName) && (/blade of speed/i).test(v.WeaponTextName)) {
+					if (!v.theWea.isMagicWeapon && v.isMeleeWeapon && (/sword|scimitar|rapier/i).test(v.baseWeaponName) && (/of speed/i).test(v.WeaponTextName)) {
 						v.theWea.isMagicWeapon = true;
 						fields.Description = fields.Description.replace(/(, |; )?Counts as magical/i, '');
 						fields.Description += (fields.Description ? '; ' : '') + 'Extra attack as bonus action';
 			}}],
 		atkCalc : [
 				function (fields, v, output) {
-					if (v.isMeleeWeapon && (/sword|scimitar|rapier/i).test(v.baseWeaponName) && (/^(?=.*blade)(?=.*speed).*$/i).test(v.WeaponTextName)) {
+					if (v.isMeleeWeapon && (/sword|scimitar|rapier/i).test(v.baseWeaponName) && (/^(?=.*sword)(?=.*speed).*$/i).test(v.WeaponTextName)) {
 						output.magic = v.thisWeapon[1] + 2;
 					}
 				}, ''
