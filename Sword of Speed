@@ -48,20 +48,20 @@ MagicItemsList["sword of speed"] = {
 			prefixOrSuffix : "prefix",
 			descriptionChange : ["replace", "sword"],
 			excludeCheck : function (inObjKey, inObj) {
-				var testRegex = /sword/i;
+				var testRegex = /sword|cutlass/i;
 				return !(testRegex).test(inObjKey) && (!inObj.baseWeapon || !(testRegex).test(inObj.baseWeapon));
 			}},
 		calcChanges : {
 			atkAdd : [
 				function (fields, v) {
-					if (!v.theWea.isMagicWeapon && v.isMeleeWeapon && (/sword/i).test(v.baseWeaponName) && (/of speed/i).test(v.WeaponTextName)) {
+					if (!v.theWea.isMagicWeapon && v.isMeleeWeapon && (/sword|cutlass/i).test(v.baseWeaponName) && (/of speed/i).test(v.WeaponTextName)) {
 						v.theWea.isMagicWeapon = true;
 						fields.Description = fields.Description.replace(/(, |; )?Counts as magical/i, '');
 						fields.Description += (fields.Description ? '; ' : '') + 'Extra attack as bonus action PB per rest';
 			}}],
 		atkCalc : [
 				function (fields, v, output) {
-					if (v.isMeleeWeapon && (/sword/i).test(v.baseWeaponName) && (/^(?=.*sword)(?=.*speed).*$/i).test(v.WeaponTextName)) {
+					if (v.isMeleeWeapon && (/sword|cutlass/i).test(v.baseWeaponName) && (/^(?=.*sword)(?=.*speed).*$/i).test(v.WeaponTextName)) {
 						output.magic = v.thisWeapon[1] + 2;
 					}
 				}, ''
