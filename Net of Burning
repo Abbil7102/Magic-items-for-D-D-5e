@@ -47,5 +47,5 @@ MagicItemsList["net of burning"] = {
 		description : "Thrown, only 1 atk, up to large creature hit is restrained; restrained creature takes 1d8 fire dmg; returns when target destroied or freed",
 		damage : [1, 8, "restrained"],
 		range : "5/15 ft",
-		modifiers : [1, 1, "Dex"],
+		modifiers : [1, Dex],
 }};
