@@ -32,7 +32,7 @@ MagicItemsList["net of burning"] = {
 	regExpSearch : /^(?=.*net)(?=.*burning).*$/i,
 	name : "Net of Burning",
 	source : ["AMI",0],
-	type : "weapon (net)",
+	type : "weapon (Special)",
 	weight : 3,
 	rarity : "rare",
 	ability : 2,
