@@ -176,7 +176,7 @@ MagicItemsList["net of burning"] = {
 		regExpSearch : /^(?=.*net)(?=.*burning).*$/i,
 		name : "Net of Burning",
 		source : ["AMI",0],
-		description : "Thrown, only 1 atk, up to large creature hit is restrained; restrained creature takes 1d8 fire dmg; returns when target destroied or freed",
+		description : "Thrown, only 1 atk, up to large creature hit is restrained; restrained creature takes fire dmg; returns when target destroied or freed",
 		damage : [1, 8, "restrained"],
 		range : "5/15 ft",
 		modifiers : [1, 1],
