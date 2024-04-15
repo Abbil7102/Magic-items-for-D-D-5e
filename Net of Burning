@@ -34,7 +34,6 @@ MagicItemsList["net of burning"] = {
 	source : ["AMI",0],
 	type : "weapon (net)",
 	weight : 3,
-	type : "Thrown, Returning",
 	rarity : "rare",
 	ability : 2,
 	abilitytodamage : true,
@@ -49,5 +48,5 @@ MagicItemsList["net of burning"] = {
 		regExpSearch : /^(?=.*net)(?=.*burning).*$/i,
 		name : "Net of Burning",
 		source : ["AMI",0],
-		description : "Thrown, only 1 atk, up to large creature hit is restrained; restrained creature takes 1d8 fire dmg",returns when target destroied or freed,
+		description : "Thrown, only 1 atk, up to large creature hit is restrained; restrained creature takes 1d8 fire dmg; returns when target destroied or freed",
 }};
