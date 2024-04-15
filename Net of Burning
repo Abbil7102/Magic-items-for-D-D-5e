@@ -35,7 +35,6 @@ MagicItemsList["net of burning"] = {
 	type : "martial",
 	weight : 3,
 	rarity : "rare",
-	ability : 2,
 	description : "This net is made from the silk of an Fire Weaver Spider. A creature restrained by this magic weapon takes 1d8 afire damage at the start of each of it's turns. The DC to escape it using a Strength check is 10 or 5 points of slashing dmage.",
 	descriptionFull : "This net is made from the silk of an Fire Weaver Spider. A creature restrained by this magic weapon takes 1d8 fire damage at the start ofeach of it's turns. The DC to escape it using a Strength check is 10 or 5 points of slashing dmage.",
 	weaponsAdd : ["Net of Burning"],
@@ -47,5 +46,7 @@ MagicItemsList["net of burning"] = {
 		description : "Thrown, only 1 atk, up to large creature hit is restrained; restrained creature takes 1d8 fire dmg; returns when target destroied or freed",
 		damage : [1, 8, "restrained"],
 		range : "5/15 ft",
-		modifiers : [1, Dex],
+		modifiers : [1, 1],
+		ability : 2,
+		abilitytodamage : true,
 }};
