@@ -41,8 +41,8 @@ MagicItemsList["skull hammer"] = {
 	weight : 2,
 	extraLimitedFeatures : [{
 		name : "Skull Hammer - Thunderwave",
-		usages : proficiency bonus,
-		recovery : "dawn"
+		usages : PB,
+		recovery : "long rest",
 	}, 
 	spellcastingBonus : [{
 		name : "Proficiency bonus per day",
