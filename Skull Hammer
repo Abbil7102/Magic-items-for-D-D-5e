@@ -51,7 +51,7 @@ MagicItemsList["skull hammer"] = {
 	weaponsAdd : ["Skull Hammer"],
 	weaponOptions : {
 		baseWeapon : "hammer",
-		regExpSearch : /^(?=.*skull)(((?=.*hammer)).*$/i,
+		regExpSearch : /^(?=.*skull)(?=.*hammer)).*$/i,
 		name : "Skull Hammer",
 		description : "Versatile (2d6); Can cast thunderwave on hit, see item",
     damage : [1, 10, "Bludgeoning"],
