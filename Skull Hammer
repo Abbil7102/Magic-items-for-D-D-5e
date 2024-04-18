@@ -28,6 +28,8 @@ SourceList["ACE"] = {
 	url : "https://www.dmsguild.com/product/174973",
 	date : "2017/08/02"
 };
+
+
 MagicItemsList["skull hammer"] = {
 	name : "Skull Hammer",
 	type : "weapon (hammer)",
