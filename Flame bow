@@ -36,12 +36,12 @@ MagicItemsList["flame bow"] = {
 		type : "weapon (any bow)",
 		rarity : "rare",
 		magicItemTable : "G",
-		attunement : true,
+		attunement : false,
 		description : "I can speak the command word of this magic bow, causing flames to erupt from any non-magical ammunition nocked into it. These flames add +2d6 fire damage and shine bright light in a 40-ft radius and dim light for an additional 40 ft..",
 		descriptionFull : "You can speak this magic bow's command word, causing flames to erupt from the any non-magical ammunition nocked into it. These flames shed bright light in a 40-foot radius and dim light for an additional 40 feet. While the ammunition is ablaze, it deals an extra 2d6 fire damage to any target it hits..",
-		action : [["bonus action", " (activate/end)"]],
 		chooseGear : {
 			type : "weapon",
+			modifiers : [1, 1],
 			prefixOrSuffix : "brackets",
 			descriptionChange : ["replace", "bow"],
 			excludeCheck : function (inObjKey, inObj) {
