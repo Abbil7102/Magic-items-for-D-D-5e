@@ -36,7 +36,6 @@ MagicItemsList["flame bow"] = {
 		type : "weapon (any bow)",
 		rarity : "rare",
 		magicItemTable : "G",
-		attunement : false,
 		description : "I can speak the command word of this magic bow, causing flames to erupt from any non-magical ammunition nocked into it. These flames add +2d6 fire damage and shine bright light in a 40-ft radius and dim light for an additional 40 ft..",
 		descriptionFull : "You can speak this magic bow's command word, causing flames to erupt from the any non-magical ammunition nocked into it. These flames shed bright light in a 40-foot radius and dim light for an additional 40 feet. While the ammunition is ablaze, it deals an extra 2d6 fire damage to any target it hits..",
 		chooseGear : {
@@ -58,7 +57,7 @@ MagicItemsList["flame bow"] = {
 						fields.Description += (fields.Description ? '; ' : '') + 'While active, +2d6 fire damage';
 					}
 				},
-				'If I include the words "Flame Bow" in a the name of a bow, it will be treated as the magic weapon Flame Tongue. When the command word is spoken, the ammunition erupts with flames, adding +2d6 fire damage on a hit and shining light.'
+				'If I include the words "Flame Bow" in a the name of a bow, it will be treated as the magic weapon Flame Bow. When the command word is spoken, the ammunition erupts with flames, adding +2d6 fire damage on a hit and shining light.'
 			]
 		}
 	}
