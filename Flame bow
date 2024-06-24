@@ -51,7 +51,7 @@ MagicItemsList["flame bow"] = {
 		calcChanges : {
 			atkAdd : [
 				function (fields, v) {
-					if (!v.theWea.isMagicWeapon && v.isMeleeWeapon && /bow|crossbow/i.test(v.baseWeaponName) && /^(?=.*flame)(?=.*bow).*$/i.test(v.WeaponTextName)) {
+					if (!v.theWea.isMagicWeapon && v.isRangedWeapon && /bow|crossbow/i.test(v.baseWeaponName) && /^(?=.*flame)(?=.*bow).*$/i.test(v.WeaponTextName)) {
 						v.theWea.isMagicWeapon = true;
 						fields.Description = fields.Description.replace(/(, |; )?Counts as magical/i, '');
 						fields.Description += (fields.Description ? '; ' : '') + 'While active, +2d6 fire damage';
@@ -59,10 +59,4 @@ MagicItemsList["flame bow"] = {
 				},
 					'If I include the words "Flame Bow" in a the name of a bow, it will be treated as the magic weapon Flame Tongue. When the command word is spoken, the ammunition erupts with flames, adding +2d6 fire damage on a hit and shining light.'
 		    ],
-		atkCalc : [
-				function (fields, v, output) {
-					if (v.isMeleeWeapon && /bow|crossbow/i.test(v.baseWeaponName) && (/flame/i).test(v.WeaponTextName) && v.theWea.damage[2] == "piercing") {
-						output.magic = v.thisWeapon[1] + 1;
-					}
-				}, ''
-			]}}
+}}
