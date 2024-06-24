@@ -18,7 +18,7 @@
 	Note that this content is not balanced well for all weapons and the official D&D 5e rules state that you are better off using the weapon stats from the PHB and switching out their names for something else (e.g. the sickle stats fit a kama)
 */
 
-var iFileName = "Abbil's Magic Items [Abbil's work, transcribed by Abbil].js";
+var iFileName = "ACE [The Ultimate guide to Alchemy, Crafting and Enchanting, transcribed by Abbil].js";
 RequiredSheetVersion(12.999);
 
 SourceList["AMI"] = {
@@ -29,9 +29,10 @@ SourceList["AMI"] = {
 	date : "2017/08/02"
 };
 
-"flame tongue" : {
+MagicItemsList["flame bow"] = {
+        regExpSearch : /^(?=.*bow)(?=.*flame).*$/i,
 		name : "Flame Bow",
-		source : [["SRD", 223], ["D", 170]],
+		source : ["AMI"],
 		type : "weapon (any bow)",
 		rarity : "rare",
 		magicItemTable : "G",
@@ -51,7 +52,7 @@ SourceList["AMI"] = {
 		calcChanges : {
 			atkAdd : [
 				function (fields, v) {
-					if (!v.theWea.isMagicWeapon && v.isMeleeWeapon && /sword|scimitar|rapier/i.test(v.baseWeaponName) && /^(?=.*flame)(?=.*tongue).*$/i.test(v.WeaponTextName)) {
+					if (!v.theWea.isMagicWeapon && v.isMeleeWeapon && /bow|crossbow/i.test(v.baseWeaponName) && /^(?=.*flame)(?=.*bow).*$/i.test(v.WeaponTextName)) {
 						v.theWea.isMagicWeapon = true;
 						fields.Description = fields.Description.replace(/(, |; )?Counts as magical/i, '');
 						fields.Description += (fields.Description ? '; ' : '') + 'While active, +2d6 fire damage';
@@ -60,4 +61,4 @@ SourceList["AMI"] = {
 				'If I include the words "Flame Bow" in a the name of a bow, it will be treated as the magic weapon Flame Tongue. When the command word is spoken, the ammunition erupts with flames, adding +2d6 fire damage on a hit and shining light.'
 			]
 		}
-	},
+	}
