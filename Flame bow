@@ -29,18 +29,35 @@ SourceList["AMI"] = {
 	date : "2017/08/02"
 };
 
-MagicItemsList["flame bow"] = {
-	regExpSearch : /^(?=.*bow)(?=.*flame).*$/i,
-	name : "Flame Bow",
-	source : ["AMI",0],
-	type : "weapon (bow)",
-	rarity : "uncommon",
-	description : "This bow is made from the limbs of a Gulthias Tree, all arrows fired from this weapon burst into flame and cause 2d6 fire damage",
-	weaponsAdd : ["Vitriolic Web"],
-	weaponOptions : {
-		baseWeapon : "bow",
-		regExpSearch : /^(?=.*bow)(?=.*flame).*$/i,
+"flame tongue" : {
 		name : "Flame Bow",
-		source : ["AMI",0],
-		description : "Ranged, adds 2d6 fire dmg",
-}};
+		source : [["SRD", 223], ["D", 170]],
+		type : "weapon (any bow)",
+		rarity : "rare",
+		magicItemTable : "G",
+		attunement : true,
+		description : "I can speak the command word of this magic bow, causing flames to erupt from any non-magical ammunition nocked into it. These flames add +2d6 fire damage and shine bright light in a 40-ft radius and dim light for an additional 40 ft..",
+		descriptionFull : "You can speak this magic bow's command word, causing flames to erupt from the any non-magical ammunition nocked into it. These flames shed bright light in a 40-foot radius and dim light for an additional 40 feet. While the ammunition is ablaze, it deals an extra 2d6 fire damage to any target it hits..",
+		action : [["bonus action", " (activate/end)"]],
+		chooseGear : {
+			type : "weapon",
+			prefixOrSuffix : "brackets",
+			descriptionChange : ["replace", "bow"],
+			excludeCheck : function (inObjKey, inObj) {
+				var testRegex = /bow|crossbow/i;
+				return !testRegex.test(inObjKey) && (!inObj.baseWeapon || !testRegex.test(inObj.baseWeapon));
+			}
+		},
+		calcChanges : {
+			atkAdd : [
+				function (fields, v) {
+					if (!v.theWea.isMagicWeapon && v.isMeleeWeapon && /sword|scimitar|rapier/i.test(v.baseWeaponName) && /^(?=.*flame)(?=.*tongue).*$/i.test(v.WeaponTextName)) {
+						v.theWea.isMagicWeapon = true;
+						fields.Description = fields.Description.replace(/(, |; )?Counts as magical/i, '');
+						fields.Description += (fields.Description ? '; ' : '') + 'While active, +2d6 fire damage';
+					}
+				},
+				'If I include the words "Flame Bow" in a the name of a bow, it will be treated as the magic weapon Flame Tongue. When the command word is spoken, the ammunition erupts with flames, adding +2d6 fire damage on a hit and shining light.'
+			]
+		}
+	},
