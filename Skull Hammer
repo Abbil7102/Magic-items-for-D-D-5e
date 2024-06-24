@@ -21,45 +21,44 @@
 var iFileName = "ACE [The Ultimate guide to Alchemy, Crafting and Enchanting, transcribed by Abbil].js";
 RequiredSheetVersion(12.999);
 
-SourceList["ACE"] = {
-	name : "ACE",
-	abbreviation : "ACE",
+SourceList["AMI"] = {
+	name : "AMI",
+	abbreviation : "AMI",
 	group : "Dungeon Masters Guild",
 	url : "https://www.dmsguild.com/product/174973",
 	date : "2017/08/02"
 };
 
-
-MagicItemsList["skull hammer"] = {
-	name : "Skull Hammer",
-	type : "weapon (hammer)",
-	rarity : "rare",
-	attunement : true,
-	description : "This war pick adds +1 to attack and damage rolls. I can use it to cast Thunderwave proficiency times per dawn.",
-	descriptionFull : "You gain a +1 bonus to attack and damage rolls made with this magic war pick. It has the following special properties:"+
-	"\n   " + toUni("Thunderwave") + ". You can cast the thunderwave spell from this hammer. This property can be used proficiency bonus times per day.",
-	weight : 2,
-	extraLimitedFeatures : [{
-		name : "Skull Hammer - Thunderwave",
-		usages : PB,
-		recovery : "long rest",
-	}, 
-	spellcastingBonus : [{
-		name : "Proficiency bonus per day",
-		spells : ["thunderwave"],
-		selection : ["thunderwave"],
-		firstCol : "PB"
-	}],
-	weaponsAdd : ["Skull Hammer"],
-	weaponOptions : {
-		baseWeapon : "hammer",
-		regExpSearch : /^(?=.*skull)(?=.*hammer).*$/i,
-		name : "Skull Hammer",
-		description : "Versatile (2d6); Can cast thunderwave on hit, see item",
-    damage : [1, 10, "Bludgeoning"],
-		range : "melee",
-		modifiers : [1, 1],
-		ability : 1,
-		abilitytodamage : true,
+MagicItemsList["flame bow"] = {
+        regExpSearch : /^(?=.*bow)(?=.*flame).*$/i,
+		name : "Flame Bow",
+		source : ["AMI"],
+		type : "weapon (any bow)",
+		rarity : "rare",
+		magicItemTable : "G",
+		attunement : false,
+		description : "I can speak the command word of this magic bow, causing flames to erupt from any non-magical ammunition nocked into it. These flames add +2d6 fire damage and shine bright light in a 40-ft radius and dim light for an additional 40 ft..",
+		descriptionFull : "You can speak this magic bow's command word, causing flames to erupt from the any non-magical ammunition nocked into it. These flames shed bright light in a 40-foot radius and dim light for an additional 40 feet. While the ammunition is ablaze, it deals an extra 2d6 fire damage to any target it hits..",
+		chooseGear : {
+			type : "weapon",
+			modifiers : [1, 1],
+			prefixOrSuffix : "brackets",
+			descriptionChange : ["replace", "bow"],
+			excludeCheck : function (inObjKey, inObj) {
+				var testRegex = /bow|crossbow/i;
+				return !testRegex.test(inObjKey) && (!inObj.baseWeapon || !testRegex.test(inObj.baseWeapon));
+			}
+		},
+		calcChanges : {
+			atkAdd : [
+				function (fields, v) {
+					if (!v.theWea.isMagicWeapon && v.isMeleeWeapon && /bow|crossbow/i.test(v.baseWeaponName) && /^(?=.*flame)(?=.*bow).*$/i.test(v.WeaponTextName)) {
+						v.theWea.isMagicWeapon = true;
+						fields.Description = fields.Description.replace(/(, |; )?Counts as magical/i, '');
+						fields.Description += (fields.Description ? '; ' : '') + 'While active, +2d6 fire damage';
+					}
+				},
+				'If I include the words "Flame Bow" in a the name of a bow, it will be treated as the magic weapon Flame Tongue. When the command word is spoken, the ammunition erupts with flames, adding +2d6 fire damage on a hit and shining light.'
+			]
+		}
 	}
-};
