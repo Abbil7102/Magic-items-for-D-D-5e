@@ -29,4 +29,18 @@ SourceList["AMI"] = {
 	date : "2017/08/02"
 };
 
-
+MagicItemsList["flame bow"] = {
+	regExpSearch : /^(?=.*bow)(?=.*flame).*$/i,
+	name : "Flame Bow",
+	source : ["AMI",0],
+	type : "weapon (bow)",
+	rarity : "uncommon",
+	description : "This bow is made from the limbs of a Gulthias Tree, all arrows fired from this weapon burst into flame and cause 2d6 fire damage",
+	weaponsAdd : ["Vitriolic Web"],
+	weaponOptions : {
+		baseWeapon : "bow",
+		regExpSearch : /^(?=.*bow)(?=.*flame).*$/i,
+		name : "Flame Bow",
+		source : ["AMI",0],
+		description : "Ranged, adds 2d6 fire dmg",
+}};
