@@ -41,7 +41,6 @@ MagicItemsList["flame bow"] = {
 		descriptionFull : "You can speak this magic bow's command word, causing flames to erupt from the any non-magical ammunition nocked into it. These flames shed bright light in a 40-foot radius and dim light for an additional 40 feet. While the ammunition is ablaze, it deals an extra 2d6 fire damage to any target it hits..",
 		chooseGear : {
 			type : "weapon",
-			modifiers : [1, 1],
 			prefixOrSuffix : "brackets",
 			descriptionChange : ["replace", "bow"],
 			excludeCheck : function (inObjKey, inObj) {
